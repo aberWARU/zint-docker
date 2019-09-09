@@ -18,4 +18,4 @@ WORKDIR /zint-2.4.2/build
 RUN cmake ..
 RUN make
 RUN make install
-
+WORKDIR /
