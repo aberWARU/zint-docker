@@ -1,0 +1,14 @@
+sudo: required
+
+services:
+    - docker
+
+script:
+    - docker build -t wilsontom/zint-docker .
+    - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+    - docker push wilsontom/zint-docker
+
+notifications:
+    email:
+        on_success: change
+        on_failure: change
