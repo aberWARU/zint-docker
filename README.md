@@ -9,3 +9,6 @@
 ```sh
 docker run -it --name zint -v <local_directory>:/output wilsontom/zint-docker
 ```
+
+The container must be run with a mounted volume so that you can export your generated barcodes. Replace <local_directory> with a valid directory path on your local host.
+
