@@ -9,11 +9,11 @@ RUN apt-get update && apt-get install -y \
     make \
     g++
 
-RUN wget https://github.com/downloads/zint/zint/zint-2.4.2.tar.gz
+RUN wget https://github.com/downloads/zint/zint/zint-2.4.3.tar.gz
 
-RUN tar -zxvf zint-2.4.2.tar.gz
+RUN tar -zxvf zint-2.4.3.tar.gz
 
-WORKDIR /zint-2.4.2/build
+WORKDIR /zint-2.4.3/build
 
 RUN cmake ..
 RUN make
